@@ -1,0 +1,4 @@
+<div>
+  Your current balance:
+  <span [class.negative]="isNegative | async">$ {{ balance | async  }}</span>
+</div>

@@ -1,0 +1,16 @@
+<div  class="transactions">
+  <div class="box-wrapper">
+    <div class="box">
+      <h2>deposits</h2>
+      <div *ngFor="let transaction of (deposits | async) "> {{transaction}} </div>
+    </div>
+    <div class="box">
+      <h2>withdrawls</h2>
+      <div *ngFor="let transaction of (withdrawls | async) "> {{transaction}} </div>
+    </div>
+    <div class="box">
+      <h2>all transactions</h2>
+      <div *ngFor="let transaction of (transactions | async) "> {{transaction}} </div>
+    </div>
+  </div>
+</div>
